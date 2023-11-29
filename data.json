@@ -31,9 +31,30 @@
     {
       "full_name": "Phạm Đăng",
       "email": "lackguku1@gmail.com",
+      "password": "01052003",
+      "confirm_password": "01052003",
+      "id": 5
+    },
+    {
+      "full_name": "Phạm Đăng",
+      "email": "lackguku1@gmail.com",
+      "password": "01052003",
+      "confirm_password": "01052003",
+      "id": 6
+    },
+    {
+      "full_name": "Phạm Đăng",
+      "email": "lackguku1@gmail.com",
+      "password": "01052003",
+      "confirm_password": "01052003",
+      "id": 7
+    },
+    {
+      "full_name": "Phạm Đăng",
+      "email": "lackguku1@gmail.com",
       "password": "123456",
       "confirm_password": "123456",
-      "id": 5
+      "id": 8
     }
   ]
 }
