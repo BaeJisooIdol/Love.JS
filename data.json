@@ -1,0 +1,39 @@
+{
+  "getDatas": [
+    {
+      "full_name": "đăng",
+      "email": "lackguku1@gmail.com",
+      "password": "den152003",
+      "confirm_password": "den152003",
+      "id": 1
+    },
+    {
+      "full_name": "Phạm Đăng",
+      "email": "dangphce180896@fpt.edu.vn",
+      "password": "01052003",
+      "confirm_password": "01052003",
+      "id": 2
+    },
+    {
+      "full_name": "Phạm Đăng",
+      "email": "dangphce180896@fpt.edu.vn",
+      "password": "01052003",
+      "confirm_password": "01052003",
+      "id": 3
+    },
+    {
+      "full_name": "Phạm Đăng",
+      "email": "dangphce180896@fpt.edu.vn",
+      "password": "01052003",
+      "confirm_password": "01052003",
+      "id": 4
+    },
+    {
+      "full_name": "Phạm Đăng",
+      "email": "lackguku1@gmail.com",
+      "password": "123456",
+      "confirm_password": "123456",
+      "id": 5
+    }
+  ]
+}
