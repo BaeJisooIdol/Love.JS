@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOve_JS</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        .yellow {
+    color: yellow;
+    }
+
+    .red {
+    color: red;
+    }
+
+    .blue {
+    color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <h1 class="title">Log_in</h1>
+            <div class="group">
+                <label for="">Name</label>
+                <input name="full_name" class="input full_name" id="full_name" type="text" placeholder="Họ và tên">
+                <div class="massage"></div>
+            </div>
+            <div class="group">
+                <label for="">Email</label>
+                <input name="email" class="input email" id="email" type="text" placeholder="Email">
+                <div class="massage"></div>
+            </div>
+            <div class="group">
+                <label for="">Password</label>
+                <input name="password" class="input password" id="password" type="text" placeholder="Mật khẩu">
+                <div class="massage"></div>
+            </div>
+            <div class="group">
+                <label for="">Confirm Password</label>
+                <input name="confirm_password" class="input confirm_password" id="confirm_password" type="text" placeholder="Nhập lại mật khẩu">
+                <div class="massage"></div>
+            </div>
+
+            <button class="submit">
+                Đăng nhập
+            </button>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        Validation({
+            form: '#form',
+            rules: [
+                Validation.isRequire('#full_name'),
+                Validation.isRequire('#email'),
+                Validation.isEmail('#email'),
+                Validation.isRequire('#password'),
+                Validation.isPassword('#password', 6),
+                Validation.isRequire('#confirm_password'),
+                Validation.isConfirmPassword('#confirm_password', function () {
+                    return document.querySelector('#password').value;
+                }),
+
+            ],
+
+            onSubmit: function (data) {
+                console.log(data)
+            }
+        })
+    </script>
+</body>
+</html>
